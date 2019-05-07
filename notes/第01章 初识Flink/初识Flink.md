@@ -12,6 +12,8 @@
 
 
 一. Flink概述 
-
+  1. Flink 是什么
+  2. Unbounded vs Bounded Data
+  3. Batch vs Streaming
 
 
