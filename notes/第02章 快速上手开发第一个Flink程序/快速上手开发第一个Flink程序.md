@@ -23,6 +23,30 @@
               Flink + Java 
 
 
+Java工程创建方式：
+mvn archetype:generate                               \
+      -DarchetypeGroupId=org.apache.flink              \
+      -DarchetypeArtifactId=flink-quickstart-java      \
+      -DarchetypeVersion=1.8.0
 
 
-              
+ out of the box ==> OOTB  开箱即用           
+
+
+开发流程/开发八股文编程：
+	1）set up the batch execution environment
+	2）read
+	3) transform the resulting DataSet<String> using operations
+ 	4) execute program
+
+
+
+
+Scala工程创建方式:
+mvn archetype:generate                               \
+      -DarchetypeGroupId=org.apache.flink              \
+      -DarchetypeArtifactId=flink-quickstart-scala     \
+      -DarchetypeVersion=1.8.0
+
+
+      
