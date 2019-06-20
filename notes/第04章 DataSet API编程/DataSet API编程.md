@@ -25,5 +25,12 @@ Sink: 目的地
 
 
 2. DataSource
+	a) 基于集合
+	b) 基于文件
+
+
+
+3. Transformation(转换)
+	
 
 
