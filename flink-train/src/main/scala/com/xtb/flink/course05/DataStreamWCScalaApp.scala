@@ -7,7 +7,6 @@ object DataStreamWCScalaApp {
 
   def main(args: Array[String]): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
-    
 //    socketStreamFunction(env)
 //    nonParallelSourceFunction(env)
 //    parallelSourceFunction(env)
