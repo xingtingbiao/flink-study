@@ -36,14 +36,23 @@ env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
 	Window Assigners
 	窗口分配器：定义如何将数据分配给窗口
 	A WindowAssigner is responsible for assigning each incoming element to one or more windows.
+	每个传入的数据分配给一个或者多个窗口
 
 	内置四种窗口分配器：
 	tumbling windows   滚动窗口
+	Tumbling windows have a fixed size and do not overlap
+
 	sliding windows    滑动窗口
 	session windows    会话窗口
 	global windows     全局窗口
 
 	[start timestamp, end timestamp) 左闭右开
+
+
+
+3. Flink中的watermarks    *****
+	详见官网
+	博客详解：https://blog.csdn.net/lmalds/article/details/52704170
 
 
 
