@@ -23,3 +23,16 @@ Flink部署及作业提交
 2. Standalone单机模式
 	cd flink-dist/ 目录（成功编译后生成）
 
+	./bin/start-cluster.sh  # Start Flink
+	Check the Dispatcher’s web frontend at http://localhost:8081
+
+	tail log/flink-*-standalonesession-*.log
+
+	example: https://ci.apache.org/projects/flink/flink-docs-release-1.8/tutorials/local_setup.html
+
+
+
+
+
+
+
