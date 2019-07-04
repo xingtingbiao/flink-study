@@ -38,7 +38,24 @@ Flink Connectors
 
 
 
- Flink对接Kafka作为Source使用
+4. Flink对接Kafka作为Source/Sink使用
+   详见官网 和 代码
+
+
+
+
+5. Flink整合Kafka的offset管理及EXACTLY_ONCE语义
+	详见官网：https://ci.apache.org/projects/flink/flink-docs-release-1.8/dev/connectors/kafka.html
+	详见代码
+
+
+
+
+6. Flink整合Kafka的Checkpoint常用参数设置梳理
+	详见官网和代码
+
+
+
 
 
 
