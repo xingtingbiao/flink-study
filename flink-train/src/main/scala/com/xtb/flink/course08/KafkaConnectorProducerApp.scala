@@ -30,7 +30,7 @@ object KafkaConnectorProducerApp {
     prop.setProperty("bootstrap.servers", brokerList)
     val producer = new FlinkKafkaProducer[String](
       topic,
-      new KeyedSerializationSchemaWrapper[String](new SimpleStringSchema[String]()),
+      new KeyedSerializationSchemaWrapper[String](new SimpleStringSchema()),
       prop,
       FlinkKafkaProducer.Semantic.EXACTLY_ONCE
     )
