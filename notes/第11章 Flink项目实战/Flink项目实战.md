@@ -46,5 +46,43 @@ Flink项目实战
 
 
 
+5. ES 部署
+下载：wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.3.0-linux-x86_64.tar.gz
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.3.0-darwin-x86_64.tar.gz
+修改配置文件config/elasticsearch.yml: network.host: 0.0.0.0
+
+mac 安装
+brew install elasticsearch
+brew install kibana
+
+创建索引
+	curl -XPUT 'http://127.0.0.1:9200/cdn'
+
+
+curl -H "Content-Type: application/json" -XPOST 'http://127.0.0.1:9200/cdn/traffic/_mapping?pretty' -d '{
+"traffic":{
+    "properties":{
+        "domain":{"type":"text"},
+        "traffics":{"type":"long"},
+        "time":{"type":"date","format": "yyyy-MM-dd HH:mm"}
+        }
+    }
+}'
+
+curl -XDELETE '127.0.0.1:9200/cdn'
+
+curl -H "Content-Type: application/json" -XPOST 'http://127.0.0.1:9200/cdn/traffic/_mapping?pretty' -d '{
+"traffic":{
+	"properties":{
+		"domain":{"type":"keyword"},
+		"traffics":{"type":"long"},
+		"time":{"type":"date","format": "yyyy-MM-dd HH:mm"}
+		}
+    }
+}'
+
+
+
+
 
 
